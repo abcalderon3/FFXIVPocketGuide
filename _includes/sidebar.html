@@ -41,11 +41,11 @@
             <h1
                 class="sidebar__title">
                 <a
-                    href="/"
+                    href="{{ '/' | relative_url }}"
                     title="Return to the Pocket Guide Home Page.">
                     <img
                         alt="FFXIV Icon"
-                        src="/assets/img/icon.svg">
+                        src="{{ '/assets/img/icon.svg' | relative_url }}">
                 </a>
             </h1>
 
@@ -55,7 +55,7 @@
                 <li>
                     <a
                         {% if page.page_category == "all" %}class="active"{% endif %}
-                        href="/"
+                        href="{{ '/' | relative_url }}"
                         title="View All Guides.">
                         All Guides
                     </a>
@@ -65,7 +65,7 @@
                     <a
                         {% if page.page_category == "dungeons" %}class="active"{% endif %}
                         {% if page.instanceType == "dungeon" or page.instance_type == "Dungeon" %}class="active"{% endif %}
-                        href="/dungeons"
+                        href="{{ '/dungeons' | relative_url }}"
                         title="View Dungeon Guides.">
                         Dungeons
                     </a>
@@ -75,7 +75,7 @@
                     <a
                         {% if page.page_category == "trials" %}class="active"{% endif %}
                         {% if page.instanceType == "trial" or page.instance_type == "Trial" %}class="active"{% endif %}
-                        href="/trials"
+                        href="{{ '/trials' | relative_url }}"
                         title="View Trial Guides.">
                         Trials
                     </a>
@@ -85,7 +85,7 @@
                     <a
                         {% if page.page_category == "raids" %}class="active"{% endif %}
                         {% if page.instanceType == "raid" or page.instance_type == "Raid" %}class="active"{% endif %}
-                        href="/raids"
+                        href="{{ '/raids' | relative_url }}"
                         title="View Raid Guides.">
                         Raids
                     </a>

@@ -8,15 +8,15 @@
 
     <a 
         class="index-item__link"
-        href="{{ guide.url }}"
+        href="{{ guide.url | relative_url }}"
         title="Go to the {{ guide.title}} Guide">
 
         <div
             class="index-item__background"
             {% if guide.cover %}
-                style="background-image: url('{{ guide.cover }}')" 
+                style="background-image: url('{{ guide.cover | relative_url }}')" 
             {% elsif guide.image %}
-                style="background-image: url('{% for image in guide.image %}{{ image.urlSmall }}{% endfor %}')" 
+                style="background-image: url('{% for image in guide.image %}{{ image.urlSmall | relative_url }}{% endfor %}')" 
             {% endif %}>
         </div>
 
