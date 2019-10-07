@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: abcalderon3/FFXIVPocketGuide
+  name: test-repo
 
 publish_mode: editorial_workflow
 
