@@ -7,10 +7,65 @@ publish_mode: editorial_workflow
 media_folder: "assets/img"
 
 collections:
+  - name: "arr"
+    label: "A Realm Reborn"
+    delete: false
+    label_singular: "Add"
+    description: >
+    folder: "_posts/arr"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{patchNumber}}-{{fields.slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Youtube", name: "", widget: ""}
+      - {label: "Guide"}
+      - {label: "Player Level"}
+      - {label: "Item Level"}
+      - {label: "Patch"}
+      - {label: "Orchestrion Roll"}
+      - {label: "Minion(s)"}
+      - {label: ""}
+      - {label: ""}
+      - {label: ""}
+      - {label: ""}
+      - {label: ""}
+      - {label: ""}
+      - {label: ""}
+
+  - name: "hw"
+    label: "Heavensward"
+    delete: false
+    label_singular: "Add"
+    description: >
+    folder: "_posts/hw"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{patchNumber}}-{{fields.slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+
   - name: "sb"
     label: "Stormblood"
+    delete: false
+    label_singular: "Add"
+    description: >
     folder: "_posts/sb"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{patchNumber}}-{{fields.slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+    
+  - name: "shb"
+    label: "Shadowbringers"
+    delete: false
+    label_singular: "Add"
+    description: >
+    folder: "_posts/shb"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{patchNumber}}-{{fields.slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
