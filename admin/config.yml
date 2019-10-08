@@ -18,20 +18,20 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Youtube", name: "", widget: ""}
-      - {label: "Guide"}
-      - {label: "Player Level"}
-      - {label: "Item Level"}
-      - {label: "Patch"}
-      - {label: "Orchestrion Roll"}
-      - {label: "Minion(s)"}
-      - {label: ""}
-      - {label: ""}
-      - {label: ""}
-      - {label: ""}
-      - {label: ""}
-      - {label: ""}
-      - {label: ""}
+      # - {label: "Youtube", name: "", widget: ""}
+      # - {label: "Guide"}
+      # - {label: "Player Level"}
+      # - {label: "Item Level"}
+      # - {label: "Patch"}
+      # - {label: "Orchestrion Roll"}
+      # - {label: "Minion(s)"}
+      # - {label: ""}
+      # - {label: ""}
+      # - {label: ""}
+      # - {label: ""}
+      # - {label: ""}
+      # - {label: ""}
+      # - {label: ""}
 
   - name: "hw"
     label: "Heavensward"
