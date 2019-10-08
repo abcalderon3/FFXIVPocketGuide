@@ -1,5 +1,8 @@
 backend:
-  name: test-repo
+  name: github
+  repo: abcalderon3/FFXIVPocketGuide
+  branch: master
+  base_url: https://us-central1-thinking-window-255219.cloudfunctions.net/ffxiv-pg-oauth
 
 publish_mode: editorial_workflow
 
@@ -12,4 +15,3 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{patchNumber}}-{{fields.slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
