@@ -12,6 +12,7 @@ media_folder: "assets/img"
 fields_template: &common_fields
   - {label: "Name", name: "title", widget: "string"}
   - {label: "Slug", name: "slug", widget: "string"}
+  - {label: "Type", name: "instanceType", widget: "select", options: ["dungeon", "Extreme", "raid", "trial"]}
   - {label: "Date", name: "date", widget: "date"}
   - {label: "Player Level", name: "plvl", widget: "string"}
   - {label: "Item Level", name: "ilvl", widget: "string"}
