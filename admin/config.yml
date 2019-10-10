@@ -11,11 +11,12 @@ media_folder: "assets/img"
 
 fields_template: &common_fields
   - {label: "Name", name: "title", widget: "string"}
+  - {label: "Slug", name: "slug", widget: "string"}
   - {label: "Date", name: "date", widget: "date"}
   - {label: "Player Level", name: "plvl", widget: "string"}
   - {label: "Item Level", name: "ilvl", widget: "string"}
   - {label: "Difficulty", name: "order", widget: "string"}
-  - {label: "Patch", name: "patch_number", widget: "string"}
+  - {label: "Patch", name: "patchNumber", widget: "string"}
   - {label: "Orchestrion Roll", name: "orchestrion", required: false, widget: "string"}
   - {label: "Minion(s)", name: "minion", required: false, widget: "string"}
   - label: "Boss"
