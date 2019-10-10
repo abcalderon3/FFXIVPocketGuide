@@ -1,6 +1,8 @@
 ---
 title: The Ghimlyt Dark
 slug: ghimlyt-dark
+instanceType: dungeon
+categories: sb
 date: 2019-10-10T16:05:54.184Z
 plvl: '70'
 ilvl: '360'
