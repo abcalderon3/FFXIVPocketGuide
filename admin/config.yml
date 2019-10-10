@@ -10,6 +10,7 @@ publish_mode: editorial_workflow
 media_folder: "assets/img"
 
 fields_template: &common_fields
+  - {label: "Layout", name: "layout", widget: "hidden", default: "guide"}
   - {label: "Name", name: "title", widget: "string"}
   - {label: "Slug", name: "slug", widget: "string"}
   - {label: "Type", name: "instanceType", widget: "select", options: ["dungeon", "Extreme", "raid", "trial"]}
