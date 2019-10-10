@@ -16,8 +16,8 @@ fields_template: &common_fields
   - {label: "Item Level", name: "ilvl", widget: "string"}
   - {label: "Difficulty", name: "order", widget: "string"}
   - {label: "Patch", name: "patch_number", widget: "string"}
-  - {label: "Orchestrion Roll", name: "orchestrion", widget: "string"}
-  - {label: "Minion(s)", name: "minion", widget: "string"}
+  - {label: "Orchestrion Roll", name: "orchestrion", required: false, widget: "string"}
+  - {label: "Minion(s)", name: "minion", required: false, widget: "string"}
   - label: "Boss"
     name: "bosses"
     widget: "list"
@@ -41,7 +41,7 @@ collections:
   - name: "shb"
     label: "Shadowbringers"
     delete: false
-    label_singular: "Add"
+    label_singular: "Guide"
     description: >
     folder: "_posts/shb"
     create: true
@@ -53,7 +53,7 @@ collections:
   - name: "sb"
     label: "Stormblood"
     delete: false
-    label_singular: "Add"
+    label_singular: "Guide"
     description: >
     folder: "_posts/sb"
     create: true
@@ -65,7 +65,7 @@ collections:
   - name: "hw"
     label: "Heavensward"
     delete: false
-    label_singular: "Add"
+    label_singular: "Guide"
     description: >
     folder: "_posts/hw"
     create: true
@@ -77,7 +77,7 @@ collections:
   - name: "arr"
     label: "A Realm Reborn"
     delete: false
-    label_singular: "Add"
+    label_singular: "Guide"
     description: >
     folder: "_posts/arr"
     create: true
