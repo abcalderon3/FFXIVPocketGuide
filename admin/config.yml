@@ -34,8 +34,8 @@ fields_template: &common_fields
             widget: "list"
             fields:
               - {label: "Attack", name: "attack_name", widget: "string"}
-              - {label: "Roles", name: "attack_roles", widget: "select", options: ["Tank", "Healer", "Dps"]}
-              - {label: "Type", name: "attack_type", widget: "select", options: ["Tankbuster", "AoE", "Puddle AoE", "Column AoE", "Stack", "Donut AoE", "Proximity AoE", "Circular AoE"]}
+              - {label: "Roles", name: "attack_roles", widget: "select", multiple: true, options: ["Tank", "Healer", "Dps"]}
+              - {label: "Type", name: "attack_type", widget: "select", multiple: true, options: ["Tankbuster", "AoE", "Puddle AoE", "Column AoE", "Stack", "Donut AoE", "Proximity AoE", "Circular AoE"]}
               - {label: "Note", name: "attack_note", widget: "text"}
 
 collections:
