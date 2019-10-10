@@ -12,8 +12,8 @@ fields_template: &common_fields
   - {label: "Item Level", name: "ilvl", widget: "string"}
   - {label: "Difficulty", name: "order", widget: "string"}
   - {label: "Patch", name: "patch_number", widget: "string"}
-  - {label: "Orchestrion Roll", name: "orchestrion", widget: "string"}
-  - {label: "Minion(s)", name: "minion", widget: "string"}
+  - {label: "Orchestrion Roll", name: "orchestrion", required: false, widget: "string"}
+  - {label: "Minion(s)", name: "minion", required: false, widget: "string"}
   - label: "Boss"
     name: "bosses"
     widget: "list"
