@@ -13,11 +13,12 @@ fields_template: &common_fields
   - {label: "Name", name: "title", widget: "string"}
   - {label: "Slug", name: "slug", widget: "string"}
   - {label: "Type", name: "instanceType", widget: "select", options: ["dungeon", "Extreme", "raid", "trial"]}
+  - {label: "Expansion", name: "categories", widget: "select", options: ["arr", "hw", "sb", "shb"]}
   - {label: "Date", name: "date", widget: "date"}
-  - {label: "Player Level", name: "plvl", widget: "string"}
-  - {label: "Item Level", name: "ilvl", widget: "string"}
-  - {label: "Difficulty", name: "order", widget: "string"}
-  - {label: "Patch", name: "patchNumber", widget: "string"}
+  - {label: "Player Level", name: "plvl", valueType: "int", widget: "number"}
+  - {label: "Item Level", name: "ilvl", valueType: "int", widget: "number"}
+  - {label: "Difficulty", name: "order", valueType: "int", widget: "number"}
+  - {label: "Patch", name: "patchNumber", valueType: "float", widget: "number"}
   - {label: "Orchestrion Roll", name: "orchestrion", required: false, widget: "string"}
   - {label: "Minion(s)", name: "minion", required: false, widget: "string"}
   - label: "Boss"
